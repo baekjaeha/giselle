@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>giselle x nine</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+
+<div class="window" id="captureTarget">
+
+    <div class="titlebar">
+        <span>giselle x nine</span>
+
+        <div class="window-buttons">
+            <button>─</button>
+            <button>□</button>
+            <button>✕</button>
+        </div>
+    </div>
+
+    <div class="menubar">
+        File Edit Search View Insert Format Tools Window Help
+    </div>
+
+    <div class="toolbar">
+
+        <button onclick="format('bold')"><b>B</b></button>
+
+        <button onclick="format('italic')">
+            <i>I</i>
+        </button>
+
+        <button onclick="format('underline')">
+            <u>U</u>
+        </button>
+
+        <div class="separator"></div>
+
+        <select id="fontSize">
+            <option value="14">14</option>
+            <option value="16" selected>16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="28">28</option>
+            <option value="32">32</option>
+        </select>
+
+        <input type="color" id="textColor">
+
+        <div class="separator"></div>
+
+        <button onclick="format('justifyLeft')">⯇</button>
+        <button onclick="format('justifyCenter')">≡</button>
+        <button onclick="format('justifyRight')">⯈</button>
+
+        <div class="separator"></div>
+
+        <label>
+            배경
+            <input type="color" id="bgColor">
+        </label>
+
+        <div class="separator"></div>
+
+        <button id="saveBtn">
+            PNG 저장
+        </button>
+
+    </div>
+
+    <div class="editor-container">
+
+        <div
+            id="editor"
+            contenteditable="true">
+
+            그녀의 목소리는
+            웅얼거림에 가까웠다.
+
+        </div>
+
+    </div>
+
+    <div class="statusbar">
+
+        <span id="lineInfo">
+            Line 1
+        </span>
+
+        <span id="charInfo">
+            0 chars
+        </span>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

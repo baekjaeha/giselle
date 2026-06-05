@@ -1,0 +1,160 @@
+@font-face{
+
+    font-family:"MaruMinya";
+
+    src:url("./fonts/x12y12pxMaruMinyaHangul.ttf")
+    format("truetype");
+
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+    padding:20px;
+
+    background:#d4d0c8;
+
+    font-family:Tahoma,sans-serif;
+}
+
+.window{
+
+    width:1200px;
+
+    max-width:95vw;
+
+    margin:auto;
+
+    background:#c0c0c0;
+
+    border-top:2px solid white;
+    border-left:2px solid white;
+
+    border-right:2px solid #444;
+    border-bottom:2px solid #444;
+}
+
+.titlebar{
+
+    height:32px;
+
+    background:#000080;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8px;
+
+    font-weight:bold;
+}
+
+.window-buttons{
+
+    display:flex;
+    gap:2px;
+}
+
+.window-buttons button{
+
+    width:22px;
+    height:22px;
+
+    background:#c0c0c0;
+
+    border-top:2px solid white;
+    border-left:2px solid white;
+
+    border-right:2px solid #555;
+    border-bottom:2px solid #555;
+}
+
+.menubar{
+
+    padding:8px 10px;
+
+    background:#c0c0c0;
+
+    border-bottom:1px solid #999;
+}
+
+.toolbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+
+    padding:10px;
+
+    border-bottom:1px solid #999;
+}
+
+.toolbar button,
+.toolbar select{
+
+    height:30px;
+}
+
+.separator{
+
+    width:1px;
+    height:24px;
+
+    background:#777;
+}
+
+.editor-container{
+
+    padding:20px;
+
+    min-height:700px;
+}
+
+#editor{
+
+    min-height:650px;
+
+    background:white;
+
+    padding:40px;
+
+    outline:none;
+
+    font-family:"MaruMinya";
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    border:2px inset #aaa;
+}
+
+.statusbar{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:6px;
+
+    border-top:1px solid #999;
+}
+
+.statusbar span{
+
+    padding:5px 10px;
+
+    border:1px inset #aaa;
+}
